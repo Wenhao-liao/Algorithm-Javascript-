@@ -1,1 +1,1 @@
-# Algorithm-Javascript-
+# Algorithm(Javascript)
