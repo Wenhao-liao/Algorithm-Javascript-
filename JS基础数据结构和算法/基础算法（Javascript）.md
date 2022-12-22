@@ -109,13 +109,28 @@ function quickSort(arr){
 }
 ```
 
-### 希尔排序(待补充)
+### 希尔排序
 
 ```jsx
-
+function Shell_Sort(arr){
+	for(let D=Math.floor(arr.length/2);D>0;D=Math.floor(D/2)){
+			for(let i=D;i<arr.length;i++){
+				for(let j=i;j>0;j-=D){
+					let temp = arr[j]
+					if(arr[j] < arr[j-D]){ 
+						arr[j] = arr[j-D]
+						arr[j-D] = temp
+					}else{
+						break
+					}
+				}
+			}
+	}
+	return arr 
+}
 ```
 
-### 堆排序（待补充）
+### 堆排序
 
 ```jsx
 
