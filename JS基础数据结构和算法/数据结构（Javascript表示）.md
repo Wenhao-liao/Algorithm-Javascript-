@@ -570,6 +570,11 @@ class MinHeap{
 			this.shiftDown(leftIndex)
 		}
 	}
+  // 删除堆顶元素，其实就是把最后一个元素放到堆顶，然后执行
+	pop(){
+		this.swap(0,this.size-1)
+		this.shiftDown(0)
+	}
 	insert(value){
 		// 插入到堆的底部
 		this.heap.push(value)
